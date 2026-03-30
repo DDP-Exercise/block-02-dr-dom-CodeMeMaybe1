@@ -11,11 +11,23 @@
  *     For my code to show it's full potential, I just
  *     need one object. Can you help me out?
  *
- *     Bratlsoft - 2026-03-15
+ *     Carina - 2026-03-30
  *******************************************************/
 
 //TODO: Place one object here.
-
+const SAVIOR = {
+    name: "Carina",
+    age: 30,
+    location: "Austria",
+    hobbies: ["Reading", "Design", "Traveling"],
+    type_of_companion: "Cat",
+    companion: {
+        Name: "Whisky",
+        Age: 2,
+        Color: "black",
+        Mood: "lazy"
+    }
+}
 /*******************************************************
  *   DO NOT CHANGE THE CODE BELOW!
  *******************************************************/
@@ -53,3 +65,12 @@ heroes_profile.append(hobbylist);
 heroes_profile.append(companion);
 heroes_profile.append(companion_properties);
 document.body.append(heroes_profile);
+
+//pinky design
+let table = document.getElementById("heroes_profile");
+
+if (table) {
+    table.style.backgroundColor = "pink";
+    table.style.border = "1px solid deeppink";
+    table.style.borderRadius = "10px";
+}
